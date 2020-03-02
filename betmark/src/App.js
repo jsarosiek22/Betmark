@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import PersonList from "./PersonList";
+import PersonInput from "./PersonInput";
 import logo from "./logo.svg";
 import "./App.css";
+
+const testdbURI = "https://jsonbox.io/box_949fa3732ab425e926a5";
 
 class Header extends Component {
   render() {
@@ -13,7 +17,7 @@ class Header extends Component {
 }
 class Body extends Component {
   render() {
-    return <div>testing</div>;
+    return <div>test</div>;
   }
 }
 
@@ -22,8 +26,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header title={"Betmark"} />
-
-        <Body />
+        <PersonInput />
+        <PersonList />
         <Body />
       </div>
     );
