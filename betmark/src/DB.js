@@ -45,25 +45,4 @@ async function asyncCall() {
   client.close();
 }
 
-async function asyncCall2() {
-  client.connect(err => {
-    const collection = client.db("users").collection("users");
-    if (err) throw err;
-    var myObj = {
-      ID: 100000,
-      FirstName: "Kelly",
-      LastName: "Sarosiek",
-      UserID: "kellys",
-      Pwd: "ks"
-    };
-    collection.insertOne(myObj, function(err, res) {
-      if (err) throw err;
-      console.log(res);
-      db.close();
-    });
-
-    client.close();
-  });
-}
-
 asyncCall();
