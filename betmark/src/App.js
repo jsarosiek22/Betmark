@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PersonList from "./PersonList";
 import PersonInput from "./PersonInput";
-import logo from "./logo.svg";
 import "./App.css";
 
 const testdbURI = "https://jsonbox.io/box_949fa3732ab425e926a5";
